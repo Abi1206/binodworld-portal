@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; img-src &#39;self&#39; data:; style-src &#39;self&#39; &#39;unsafe-inline&#39;; script-src &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;none&#39;; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action https://gov.binodworld.in/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://binodworld.in{{PATH}}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Binod World"><meta property="og:title" content="{{TITLE}}"><meta property="og:description" content="{{DESC}}"><meta property="og:url" content="https://binodworld.in{{PATH}}"><meta property="og:image" content="https://binodworld.in/assets/og-image.png"><meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#060d1a">
+<link rel="icon" href="{{BASE}}assets/emblem.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{BASE}}assets/apple-touch-icon.png">
+<link rel="preload" href="{{BASE}}assets/fonts/playfair-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{BASE}}assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{BASE}}app.css">
+</head>
+<body data-page="{{PAGE}}" data-base="{{BASE}}">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="{{HOME}}" aria-label="Binod World — home">
+      <svg class="emblem" aria-hidden="true"><use href="#emblem"/></svg>
+      <span class="wordmark"><b>BINOD</b><i>WORLD</i></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Primary">
+      <a href="{{HOME}}" data-r="home">Home</a>
+      <a href="{{INST}}" data-r="institutions">Institutions</a>
+      <a href="{{WORLD}}" data-r="world">The World</a>
+      <a href="{{STATUS}}" data-r="status">Status</a>
+    </nav>
+    <div class="chip-wrap">
+      <a class="date-chip" href="{{STATUS}}" id="dateChip" aria-label="Current Unified Binod Calendar date"><span class="dot" aria-hidden="true"></span><span id="chipText" data-live="chip">UBC —</span></a>
+      <form class="search" action="https://gov.binodworld.in/vanta/" method="get" role="search">
+        <label class="sr" for="q">Search Binod World records with VANTA</label>
+        <input id="q" name="q" type="search" placeholder="Search records…" autocomplete="off">
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">{{MAIN}}</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="brand small"><svg class="emblem" aria-hidden="true"><use href="#emblem"/></svg><span class="wordmark"><b>BINOD</b><i>WORLD</i></span></div>
+        <p class="motto">One World • Many Nations • Shared Prosperity</p>
+      </div>
+      <nav aria-label="Footer: pages"><h2>The Gateway</h2><a href="{{HOME}}">Home</a><a href="{{INST}}">Institutions</a><a href="{{WORLD}}">The World</a><a href="{{STATUS}}">Status</a></nav>
+      <nav aria-label="Footer: institutions"><h2>Institutions</h2><a href="https://gov.binodworld.in/">Government</a><a href="https://gov.binodworld.in/biasr/">BIASR</a><a href="https://gov.binodworld.in/riid/">RIID</a><a href="https://gov.binodworld.in/vanta/">VANTA</a></nav>
+      <div><h2>Data</h2><p class="small">Snapshot of the government register as of <b>22 November 2026</b>. The calendar and Active Temporal Flow on this page are computed live in your browser.</p></div>
+    </div>
+    <p class="disclaimer">Binod World is a fictional Minecraft world and roleplay civilization. Its institutions, laws, offices and records are part of that fiction.</p>
+  </div>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3dc92"/><stop offset=".55" stop-color="#c9a84c"/><stop offset="1" stop-color="#9a7b2c"/></linearGradient>
+    <symbol id="emblem" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="#0a1628" stroke="url(#gold)" stroke-width="2.4"/>
+      <circle cx="50" cy="50" r="38.5" fill="none" stroke="url(#gold)" stroke-width=".8" opacity=".7"/>
+      <g id="emb-ticks" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round"></g>
+      <g id="emb-nodes" fill="url(#gold)"></g>
+      <g id="emb-hex" fill="none" stroke="url(#gold)" stroke-width=".7" opacity=".6"></g>
+      <path d="M50 33 L53.4 46.6 L67 50 L53.4 53.4 L50 67 L46.6 53.4 L33 50 L46.6 46.6 Z" fill="url(#gold)"/>
+      <circle cx="50" cy="50" r="2.2" fill="#0a1628"/>
+    </symbol>
+  </defs>
+</svg>
+<noscript><p class="wrap small" style="padding:1rem 0">The live calendar and status instrument need JavaScript; the rest of this page works without it.</p></noscript>
+<script src="{{BASE}}js/data.js"></script>
+<script src="{{BASE}}js/calendar-engine.js"></script>
+<script src="{{BASE}}app.js"></script>
+</body>
+</html>
